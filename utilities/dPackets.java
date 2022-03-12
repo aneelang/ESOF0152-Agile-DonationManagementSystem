@@ -12,7 +12,7 @@ public class dPackets implements Serializable{
 	//post request: object to insert/modify/delete from database
 	//get request: when received, could be null/empty.
 	//			when sent, could contain a simple string or rows from database
-    Object arg1;
+        Object arg1;
     public dPackets(String typeOfRequest, Object arg1){
         
         this.typeOfRequest = typeOfRequest;
