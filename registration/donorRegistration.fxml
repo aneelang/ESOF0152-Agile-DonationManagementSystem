@@ -12,6 +12,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
+<?import javafx.scene.text.TextFlow?>
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="660.0" prefWidth="850.0" style="-fx-background-color: FAE3B6;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
    <children>
@@ -51,7 +52,7 @@
                         <Cursor fx:constant="TEXT" />
                      </cursor>
                   </TextField>
-                  <TextField fx:id="cityField" layoutX="10.0" layoutY="303.0" prefHeight="25.0" prefWidth="120.0" style="-fx-background-radius: 7;">
+                  <TextField fx:id="cityField" layoutX="10.0" layoutY="303.0" onMouseMoved="#displayLocalOrganizations" prefHeight="25.0" prefWidth="120.0" style="-fx-background-radius: 7;">
                      <cursor>
                         <Cursor fx:constant="TEXT" />
                      </cursor>
@@ -77,25 +78,65 @@
                   </ChoiceBox>
                </children>
             </Pane>
-            <Pane layoutX="294.0" layoutY="14.0" prefHeight="507.0" prefWidth="527.0">
+            <Pane layoutX="284.0" layoutY="14.0" prefHeight="487.0" prefWidth="527.0">
                <children>
-                  <Label contentDisplay="CENTER" layoutX="27.0" layoutY="26.0" text="Thanks for being a donor! Here are some local organizations in your area">
+                  <Label contentDisplay="CENTER" layoutX="27.0" layoutY="26.0" text="Thanks for being a donor!">
                      <font>
                         <Font size="14.0" />
                      </font></Label>
-                  <ImageView fx:id="imageView1" fitHeight="150.0" fitWidth="200.0" layoutX="35.0" layoutY="89.0" pickOnBounds="true" preserveRatio="true">
+                  <Label contentDisplay="CENTER" layoutX="27.0" layoutY="61.0" text="Here are some local organizations in your ">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <ImageView fx:id="imageView1" fitHeight="150.0" fitWidth="200.0" layoutX="26.0" layoutY="142.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@../../images/feed_ontario.png" />
                      </image>
                   </ImageView>
-                  <ImageView fx:id="imageView2" fitHeight="150.0" fitWidth="200.0" layoutX="277.0" layoutY="64.0" pickOnBounds="true" preserveRatio="true" />
-                  <Button fx:id="submitButton" alignment="CENTER" layoutX="176.0" layoutY="280.0" mnemonicParsing="false" onAction="#submit" prefHeight="25.0" prefWidth="203.0" style="-fx-background-color: FAE3B6; -fx-background-radius: 7; -fx-border-color: F05A22; -fx-border-radius: 7;" text="Submit">
+                  <ImageView fx:id="imageView2" fitHeight="150.0" fitWidth="200.0" layoutX="284.0" layoutY="142.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../images/feed_ontario.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="imageView3" fitHeight="150.0" fitWidth="200.0" layoutX="26.0" layoutY="314.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../images/feed_ontario.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="imageView4" fitHeight="150.0" fitWidth="200.0" layoutX="279.0" layoutY="315.0" pickOnBounds="true" preserveRatio="true" />
+                  <ChoiceBox fx:id="cityOrProvinceChoiceBox" layoutX="288.0" layoutY="60.0" prefHeight="25.0" prefWidth="63.0" style="-fx-background-radius: 7;">
                      <cursor>
                         <Cursor fx:constant="HAND" />
                      </cursor>
-                  </Button>
+                     <effect>
+                        <Blend />
+                     </effect>
+                  </ChoiceBox>
+                  <TextFlow layoutX="199.0" layoutY="26.0">
+                     <children>
+                        <Label fx:id="errorMessageLabel" contentDisplay="CENTER" text="Error Message. " textFill="RED">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="dismissErrorLabel" accessibleRole="BUTTON" contentDisplay="CENTER" onMouseClicked="#dismissErrorMessage" text="Dismiss" textFill="RED" underline="true">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Label>
+                     </children>
+                  </TextFlow>
                </children>
             </Pane>
+            <Button fx:id="submitButton" alignment="CENTER" layoutX="446.0" layoutY="510.0" mnemonicParsing="false" onAction="#submit" prefHeight="25.0" prefWidth="203.0" style="-fx-background-color: FAE3B6; -fx-background-radius: 7; -fx-border-color: F05A22; -fx-border-radius: 7;" text="Submit">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
          </children>
       </Pane>
       <Label contentDisplay="CENTER" layoutX="37.0" layoutY="300.0" text="Street Address" />
