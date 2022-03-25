@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="436.0" prefWidth="652.0" style="-fx-background-color: FAE3B6;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.project.HelloController">
+   <children>
+      <ImageView fx:id="logoImage" fitHeight="47.0" fitWidth="54.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../Images/app_logo.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="helloMessageLabel" layoutX="74.0" layoutY="29.0" prefHeight="23.0" prefWidth="105.0" text="Hello User!" />
+      <Pane fx:id="userLeftPane" layoutX="14.0" layoutY="67.0" prefHeight="361.0" prefWidth="152.0" style="-fx-background-color: white;">
+         <children>
+            <Button layoutX="86.0" layoutY="323.0" mnemonicParsing="false" onAction="#logOutFromAccount" style="-fx-background-color: F05A22;" text="Log Out" textFill="WHITE" />
+         </children>
+      </Pane>
+      <Pane fx:id="mainPane" layoutX="172.0" layoutY="67.0" prefHeight="362.0" prefWidth="474.0" style="-fx-background-color: white;" />
+      <ImageView fitHeight="47.0" fitWidth="224.0" layoutX="172.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../Images/Community%20Clothing%20Assistance%20dark%20light%20grey%20transparent%20(2).png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
