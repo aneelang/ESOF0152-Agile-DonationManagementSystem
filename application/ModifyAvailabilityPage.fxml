@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="419.0" prefWidth="666.0" style="-fx-background-color: FAE3B6;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ModifyAvailabilityController">
+   <children>
+      <Label fx:id="pageTitleLabel" layoutX="162.0" layoutY="14.0" prefHeight="59.0" prefWidth="337.0" text="Modify Availability">
+         <font>
+            <Font name="System Bold" size="33.0" />
+         </font>
+      </Label>
+      <Button fx:id="makeChangesButton" layoutX="376.0" layoutY="380.0" mnemonicParsing="false" onAction="#makeChanges" prefHeight="25.0" prefWidth="149.0" style="-fx-background-color: F05A22;" text="Make changes" />
+      <Label fx:id="donationListLabel" layoutX="36.0" layoutY="90.0" prefHeight="40.0" prefWidth="102.0" text="Monday">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="donationListLabel1" layoutX="36.0" layoutY="119.0" prefHeight="40.0" prefWidth="102.0" text="Tuesday">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="donationListLabel2" layoutX="36.0" layoutY="150.0" prefHeight="40.0" prefWidth="102.0" text="Wednesday">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="donationListLabel3" layoutX="36.0" layoutY="178.0" prefHeight="40.0" prefWidth="102.0" text="Thursday">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="donationListLabel4" layoutX="36.0" layoutY="210.0" prefHeight="40.0" prefWidth="102.0" text="Friday">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="donationListLabel5" layoutX="36.0" layoutY="242.0" prefHeight="40.0" prefWidth="102.0" text="Saturday">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="donationListLabel6" layoutX="36.0" layoutY="275.0" prefHeight="40.0" prefWidth="102.0" text="Sunday">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <ChoiceBox fx:id="mondayAvailabilityChoice" layoutX="171.0" layoutY="97.0" prefWidth="150.0" />
+      <ChoiceBox fx:id="tuesdayAvailabilityChoice" layoutX="171.0" layoutY="127.0" prefWidth="150.0" />
+      <ChoiceBox fx:id="wednesdayAvailabilityChoice" layoutX="171.0" layoutY="158.0" prefWidth="150.0" />
+      <ChoiceBox fx:id="thursdayAvailabilityChoice" layoutX="171.0" layoutY="186.0" prefWidth="150.0" />
+      <ChoiceBox fx:id="fridayAvailabilityChoice" layoutX="171.0" layoutY="218.0" prefWidth="150.0" />
+      <ChoiceBox fx:id="saturdayAvailabilityChoice" layoutX="171.0" layoutY="250.0" prefWidth="150.0" />
+      <ChoiceBox fx:id="sundayAvailabilityChoice" layoutX="171.0" layoutY="283.0" prefWidth="150.0" />
+      <Button fx:id="backButton" layoutX="555.0" layoutY="380.0" mnemonicParsing="false" onAction="#back" prefHeight="25.0" prefWidth="83.0" style="-fx-background-color: F05A22;" text="Back" />
+   </children>
+</Pane>

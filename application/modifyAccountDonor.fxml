@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="419.0" prefWidth="666.0" style="-fx-background-color: FAE3B6;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ModifyAccountDonorController">
+   <children>
+      <Label layoutX="135.0" layoutY="27.0" prefHeight="52.0" prefWidth="396.0" text="Modify Account Details" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="33.0" />
+         </font>
+      </Label>
+      <Label fx:id="firstNameLabel" layoutX="59.0" layoutY="98.0" prefHeight="29.0" prefWidth="76.0" text="First Name">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="lastNameLabel" layoutX="59.0" layoutY="127.0" prefHeight="29.0" prefWidth="76.0" text="Last Name">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="emailAddressLabel" layoutX="59.0" layoutY="156.0" prefHeight="29.0" prefWidth="98.0" text="Email Address">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="streetAddressLabel" layoutX="59.0" layoutY="185.0" prefHeight="29.0" prefWidth="98.0" text="Street Address">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="unitNumberLabel" layoutX="59.0" layoutY="231.0" prefHeight="29.0" prefWidth="76.0" text="Unit Number">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="cityLabel" layoutX="59.0" layoutY="260.0" prefHeight="29.0" prefWidth="76.0" text="City">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="provinceLabel" layoutX="59.0" layoutY="289.0" prefHeight="29.0" prefWidth="76.0" text="Province">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="PostalCodeLabel" layoutX="59.0" layoutY="318.0" prefHeight="29.0" prefWidth="76.0" text="Postal Code">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="birthDateLabel" layoutX="59.0" layoutY="347.0" prefHeight="29.0" prefWidth="76.0" text="Birth Date">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="phoneNumberLabel" layoutX="59.0" layoutY="376.0" prefHeight="29.0" prefWidth="98.0" text="Phone Number">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <TextField fx:id="firstNameTextField" layoutX="157.0" layoutY="100.0" />
+      <TextField fx:id="lastNameTextField" layoutX="157.0" layoutY="129.0" />
+      <TextField fx:id="emailIdLabel" layoutX="157.0" layoutY="158.0" />
+      <TextArea fx:id="streetAddressTextArea" layoutX="157.0" layoutY="187.0" prefHeight="19.0" prefWidth="218.0" />
+      <TextField fx:id="emailIdLabel1" layoutX="157.0" layoutY="233.0" />
+      <TextField fx:id="cityTextField" layoutX="157.0" layoutY="262.0" />
+      <TextField fx:id="provinceTextField" layoutX="157.0" layoutY="291.0" />
+      <TextField fx:id="postalCodeTextField" layoutX="157.0" layoutY="320.0" />
+      <TextField fx:id="birthDateTextField" layoutX="157.0" layoutY="349.0" />
+      <TextField fx:id="phoneNumberTextField" layoutX="157.0" layoutY="378.0" />
+      <Button fx:id="submitButton" layoutX="409.0" layoutY="376.0" mnemonicParsing="false" onAction="#submit" prefHeight="29.0" prefWidth="132.0" style="-fx-background-color: F05A22;" text="Submit" />
+      <Button fx:id="backButton" layoutX="581.0" layoutY="376.0" mnemonicParsing="false" onAction="#back" prefHeight="29.0" prefWidth="65.0" style="-fx-background-color: F05A22;" text="Back" />
+   </children>
+</Pane>

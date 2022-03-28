@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="436.0" prefWidth="717.0" style="-fx-background-color: FAE3B6;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.SeeVolunteerOrgController">
+   <children>
+      <ImageView fx:id="logoImage" fitHeight="47.0" fitWidth="54.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../Pictures/app_logo.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="helloMessageLabel" layoutX="74.0" layoutY="29.0" prefHeight="23.0" prefWidth="105.0" text="Feed Ontario">
+         <font>
+            <Font size="16.0" />
+         </font></Label>
+      <Pane fx:id="userLeftPane" layoutX="14.0" layoutY="67.0" prefHeight="361.0" prefWidth="152.0" style="-fx-background-color: white;">
+         <children>
+            <Button fx:id="logoutButton" layoutX="53.0" layoutY="323.0" mnemonicParsing="false" onAction="#logOutFromAccount" prefHeight="27.0" prefWidth="94.0" style="-fx-background-color: F05A22; -fx-background-radius: 7; -fx-border-color: F05A22; -fx-border-radius: 7;" text="Logout" textFill="WHITE" />
+            <ComboBox fx:id="selectComboBox" layoutX="8.0" layoutY="62.0" prefHeight="54.0" prefWidth="136.0" promptText="Select Name" />
+            <Label layoutX="8.0" layoutY="14.0" prefHeight="37.0" prefWidth="148.0" text="For More Info:">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane fx:id="mainPane" layoutX="172.0" layoutY="67.0" prefHeight="362.0" prefWidth="528.0" style="-fx-background-color: white;">
+         <children>
+            <Button fx:id="backButton" layoutX="386.0" layoutY="321.0" mnemonicParsing="false" onAction="#back" prefHeight="27.0" prefWidth="94.0" style="-fx-background-color: F05A22; -fx-background-radius: 7; -fx-border-color: F05A22; -fx-border-radius: 7;" text="Back" textFill="WHITE" />
+            <TableView fx:id="volunteerTable" layoutX="14.0" layoutY="14.0" prefHeight="303.0" prefWidth="510.0">
+              <columns>
+                <TableColumn fx:id="firstName" prefWidth="118.0" text="First Name" />
+                <TableColumn fx:id="lastName" prefWidth="125.0" text="Last Name" />
+                <TableColumn fx:id="postalCode" prefWidth="91.0" text="Postal Code" />
+                  <TableColumn fx:id="phoneNumber" prefWidth="175.0" text="Phone Number" />
+              </columns>
+            </TableView>
+         </children></Pane>
+      <ImageView fitHeight="37.0" fitWidth="105.0" layoutX="192.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../Pictures/feed_ontario.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="341.0" layoutY="20.0" prefHeight="35.0" prefWidth="169.0" text="Volunteer List">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

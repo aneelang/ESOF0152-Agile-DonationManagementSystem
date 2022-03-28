@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="545.0" prefWidth="750.0" style="-fx-background-color: FAE3B6;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.CreateAccountController">
+   <children>
+      <BorderPane layoutX="60.0" layoutY="33.0" prefHeight="479.0" prefWidth="629.0" style="-fx-background-color: white;">
+         <left>
+            <AnchorPane prefHeight="484.0" prefWidth="313.0" BorderPane.alignment="CENTER">
+               <children>
+                  <ImageView fitHeight="32.0" fitWidth="38.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../HandHeart.PNG" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="57.0" layoutY="16.0" text="Make a difference">
+                     <font>
+                        <Font name="System Bold" size="26.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="30.0" layoutY="93.0" text="Username" textFill="#000000bf">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="33.0" layoutY="177.0" text="Password" textFill="#000000bf">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="usernameField" layoutX="32.0" layoutY="126.0" prefHeight="32.0" prefWidth="250.0" style="-fx-background-radius: 7;" />
+                  <TextField fx:id="passwordField" layoutX="32.0" layoutY="216.0" prefHeight="32.0" prefWidth="250.0" style="-fx-background-radius: 7;" />
+                  <Button fx:id="createAccountButton" layoutX="64.0" layoutY="379.0" mnemonicParsing="false" onAction="#createAccount" prefHeight="30.0" prefWidth="185.0" style="-fx-background-color: FAE3B6; -fx-background-radius: 7; -fx-border-color: F05A22; -fx-border-radius: 7;" text="Create Account" />
+                  <ComboBox fx:id="accountTypeComboBox" layoutX="101.0" layoutY="290.0" prefHeight="25.0" prefWidth="113.0" />
+                  <Button fx:id="backButton" layoutX="64.0" layoutY="432.0" mnemonicParsing="false" onAction="#back" prefHeight="30.0" prefWidth="185.0" style="-fx-background-color: FAE3B6; -fx-background-radius: 7; -fx-border-color: F05A22; -fx-border-radius: 7;" text="Back" />
+               </children>
+            </AnchorPane>
+         </left>
+         <right>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <children>
+                  <ImageView fitHeight="484.0" fitWidth="385.0" layoutX="1.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../Donation.PNG" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+         </right>
+      </BorderPane>
+   </children>
+</Pane>

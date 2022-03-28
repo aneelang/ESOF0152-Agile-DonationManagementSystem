@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="660.0" prefWidth="850.0" style="-fx-background-color: FAE3B6;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.EditOrgController">
+   <children>
+      <ImageView fitHeight="35.0" fitWidth="67.0" layoutX="24.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../Pictures/feed_ontario.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="98.0" layoutY="32.0" text="EDIT ORGANIZATION">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Pane layoutX="11.0" layoutY="67.0" prefHeight="585.0" prefWidth="831.0" style="-fx-background-color: white; -fx-background-radius: 30;">
+         <children>
+            <Pane layoutX="12.0" layoutY="14.0" prefHeight="536.0" prefWidth="272.0">
+               <children>
+                  <Label contentDisplay="CENTER" layoutX="14.0" layoutY="21.0" text="Organization Name" />
+                  <Label contentDisplay="CENTER" layoutX="14.0" layoutY="79.0" text="Website URL" />
+                  <Label contentDisplay="CENTER" layoutX="14.0" layoutY="144.0" text="Organization LOGO" />
+                  <Label contentDisplay="CENTER" layoutX="14.0" layoutY="216.0" text="Street Address" />
+                  <Label contentDisplay="CENTER" layoutX="14.0" layoutY="281.0" text="City" />
+                  <Label contentDisplay="CENTER" layoutX="159.0" layoutY="281.0" text="Province" />
+                  <Label contentDisplay="CENTER" layoutX="14.0" layoutY="346.0" text="Postal Code" />
+                  <TextField fx:id="organizationNameField" layoutX="12.0" layoutY="41.0" prefHeight="25.0" prefWidth="236.0" style="-fx-background-radius: 7;">
+                     <cursor>
+                        <Cursor fx:constant="TEXT" />
+                     </cursor>
+                  </TextField>
+                  <TextField fx:id="websiteURLField" layoutX="11.0" layoutY="103.0" prefHeight="25.0" prefWidth="236.0" style="-fx-background-radius: 7;">
+                     <cursor>
+                        <Cursor fx:constant="TEXT" />
+                     </cursor>
+                  </TextField>
+                  <TextField fx:id="pictureNameField" layoutX="12.0" layoutY="170.0" prefHeight="25.0" prefWidth="104.0" style="-fx-background-radius: 7;">
+                     <cursor>
+                        <Cursor fx:constant="TEXT" />
+                     </cursor>
+                  </TextField>
+                  <TextField fx:id="streetAddressField" layoutX="12.0" layoutY="240.0" prefHeight="25.0" prefWidth="116.0" style="-fx-background-radius: 7;">
+                     <cursor>
+                        <Cursor fx:constant="TEXT" />
+                     </cursor>
+                  </TextField>
+                  <TextField fx:id="cityField" layoutX="10.0" layoutY="303.0" prefHeight="25.0" prefWidth="120.0" style="-fx-background-radius: 7;">
+                     <cursor>
+                        <Cursor fx:constant="TEXT" />
+                     </cursor>
+                  </TextField>
+                  <Label contentDisplay="CENTER" layoutX="14.0" layoutY="421.0" text="Phone Number" />
+                  <TextField fx:id="phoneNumberField" layoutX="12.0" layoutY="449.0" prefHeight="25.0" prefWidth="236.0" style="-fx-background-radius: 7;">
+                     <cursor>
+                        <Cursor fx:constant="TEXT" />
+                     </cursor>
+                  </TextField>
+                  <ChoiceBox fx:id="provinceChoiceBox" layoutX="157.0" layoutY="302.0" prefHeight="25.0" prefWidth="63.0" style="-fx-background-radius: 7;">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <effect>
+                        <Blend />
+                     </effect>
+                  </ChoiceBox>
+                  <Button fx:id="uploadButton" alignment="CENTER" layoutX="134.0" layoutY="169.0" mnemonicParsing="false" onAction="#uploadPicture" prefHeight="25.0" prefWidth="116.0" style="-fx-background-color: F05A22; -fx-background-radius: 7;" text="Upload">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Label contentDisplay="CENTER" layoutX="156.0" layoutY="216.0" text="Unit Number" />
+                  <TextField fx:id="unitNumberField" layoutX="156.0" layoutY="240.0" prefHeight="25.0" prefWidth="69.0" style="-fx-background-radius: 7;">
+                     <cursor>
+                        <Cursor fx:constant="TEXT" />
+                     </cursor>
+                  </TextField>
+               </children>
+            </Pane>
+            <Pane layoutX="294.0" layoutY="14.0" prefHeight="507.0" prefWidth="527.0">
+               <children>
+                  <Label contentDisplay="CENTER" layoutX="27.0" layoutY="26.0" text="Tell us about your organization">
+                     <font>
+                        <Font size="14.0" />
+                     </font></Label>
+                  <Button fx:id="submitButton" alignment="CENTER" layoutX="162.0" layoutY="327.0" mnemonicParsing="false" onAction="#submit" prefHeight="25.0" prefWidth="203.0" style="-fx-background-color: FAE3B6; -fx-background-radius: 7; -fx-border-color: F05A22; -fx-border-radius: 7;" text="Submit">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Label contentDisplay="CENTER" layoutX="27.0" layoutY="52.0" text="Mission and Vision">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <TextArea fx:id="missionVisionTextArea" layoutX="23.0" layoutY="77.0" prefHeight="167.0" prefWidth="491.0" style="-fx-background-radius: 7;">
+                     <cursor>
+                        <Cursor fx:constant="TEXT" />
+                     </cursor>
+                  </TextArea>
+                  <Button fx:id="backButton" alignment="CENTER" layoutX="447.0" layoutY="466.0" mnemonicParsing="false" onAction="#back" prefHeight="27.0" prefWidth="67.0" style="-fx-background-color: FAE3B6; -fx-background-radius: 7; -fx-border-color: F05A22; -fx-border-radius: 7;" text="Back">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+      <TextField fx:id="postalCodeField1" layoutX="37.0" layoutY="450.0" prefHeight="25.0" prefWidth="45.0" style="-fx-background-radius: 7;">
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+      </TextField>
+      <TextField fx:id="postalCodeField2" layoutX="90.0" layoutY="450.0" prefHeight="25.0" prefWidth="45.0" style="-fx-background-radius: 7;">
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+      </TextField>
+   </children>
+</AnchorPane>
